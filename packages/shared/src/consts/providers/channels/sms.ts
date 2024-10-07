@@ -31,6 +31,7 @@ import {
   whatsAppBusinessConfig,
   eazySmsConfig,
   mobishastraConfig,
+  gupshupSmsConfig,
 } from '../credentials';
 import { ChatProviderIdEnum, SmsProviderIdEnum } from '../provider.enum';
 
@@ -108,6 +109,14 @@ export const smsProviders: IProviderConfig[] = [
     displayName: 'Gupshup',
     channel: ChannelTypeEnum.SMS,
     credentials: gupshupConfig,
+    docReference: 'https://docs.gupshup.io/docs/send-single-message',
+    logoFileName: { light: 'gupshup.png', dark: 'gupshup.png' },
+  },
+  {
+    id: SmsProviderIdEnum.GupshupSms,
+    displayName: 'Channelkart Gupshup SMS',
+    channel: ChannelTypeEnum.SMS,
+    credentials: gupshupSmsConfig,
     docReference: 'https://docs.gupshup.io/docs/send-single-message',
     logoFileName: { light: 'gupshup.png', dark: 'gupshup.png' },
   },

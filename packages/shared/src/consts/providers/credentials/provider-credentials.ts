@@ -675,6 +675,21 @@ export const gupshupConfig: IConfigCredentials[] = [
   },
 ];
 
+export const gupshupSmsConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.User,
+    displayName: 'User id',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Password,
+    displayName: 'Password',
+    type: 'string',
+    required: true,
+  },
+];
+
 export const firetextConfig: IConfigCredentials[] = [
   {
     key: CredentialsKeyEnum.ApiKey,
