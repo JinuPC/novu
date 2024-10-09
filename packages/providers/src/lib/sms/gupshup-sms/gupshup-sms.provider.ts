@@ -1,3 +1,4 @@
+import axios from 'axios';
 import {
   ChannelTypeEnum,
   ISendMessageSuccessResponse,
@@ -6,7 +7,6 @@ import {
 } from '@novu/stateless';
 import { BaseProvider, CasingEnum } from '../../../base.provider';
 import { WithPassthrough } from '../../../utils/types';
-import axios from 'axios';
 
 export class GupshupSmsSmsProvider
   extends BaseProvider
@@ -16,7 +16,7 @@ export class GupshupSmsSmsProvider
   id = 'gupshup-sms';
   channelType = ChannelTypeEnum.SMS as ChannelTypeEnum.SMS;
 
-  public static BASE_URL = 'https://enterprise.smsgupshup.com/GatewayAPI/rest';
+  public static BASE_URL = 'http://enterprise.smsgupshup.com/GatewayAPI/rest';
 
   constructor(
     private config: {
@@ -61,7 +61,7 @@ export class GupshupSmsSmsProvider
     }
 
     return {
-      id: "test_id_from_provider",
+      id: `channelkart_gupshup_id:${result[2]}`,
       date: new Date().toISOString(),
     };
   }

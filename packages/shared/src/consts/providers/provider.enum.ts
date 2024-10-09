@@ -81,7 +81,7 @@ export enum SmsProviderIdEnum {
   Telnyx = 'telnyx',
   Twilio = 'twilio',
   Gupshup = 'gupshup',
-  GupshupSms = 'gupshupSms',
+  GupshupSms = 'gupshup-sms',
   Firetext = 'firetext',
   Infobip = 'infobip-sms',
   BurstSms = 'burst-sms',

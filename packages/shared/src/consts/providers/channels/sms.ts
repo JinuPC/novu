@@ -114,11 +114,11 @@ export const smsProviders: IProviderConfig[] = [
   },
   {
     id: SmsProviderIdEnum.GupshupSms,
-    displayName: 'Channelkart Gupshup SMS',
+    displayName: 'SalesCode Gupshup SMS',
     channel: ChannelTypeEnum.SMS,
     credentials: gupshupSmsConfig,
     docReference: 'https://docs.gupshup.io/docs/send-single-message',
-    logoFileName: { light: 'gupshup.png', dark: 'gupshup.png' },
+    logoFileName: { light: 'salescode.svg', dark: 'salescode.svg' },
   },
   {
     id: SmsProviderIdEnum.Firetext,

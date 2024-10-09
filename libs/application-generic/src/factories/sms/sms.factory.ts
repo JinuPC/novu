@@ -8,6 +8,7 @@ import {
   TermiiSmsHandler,
   PlivoHandler,
   GupshupSmsHandler,
+  GupshupSmsSmsHandler,
   FiretextSmsHandler,
   InfobipSmsHandler,
   BurstSmsHandler,
@@ -65,6 +66,7 @@ export class SmsFactory implements ISmsFactory {
     new BrevoSmsHandler(),
     new EazySmsHandler(),
     new MobishastraHandler(),
+    new GupshupSmsSmsHandler(),
   ];
 
   getHandler(integration: IntegrationEntity) {
