@@ -47,6 +47,6 @@ COPY --chown=1000:1000 --from=builder /usr/src/app/apps/web/build /app/build
 COPY --chown=1000:1000 --from=builder /usr/src/app/apps/web/.env.sample /app/.env.sample
 COPY --chown=1000:1000 --from=builder /usr/src/app/apps/web/package.json /app/package.json
 
-RUN pnpm run envsetup:docker
+#RUN #pnpm run envsetup:docker
 CMD [ "pnpm", "start:static:build" ]
 # end production stage
